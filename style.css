@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: black;
+}
+
+.container {
+    /* max-width: 1000px; */
+    margin: auto;
+}
+header {
+    background-color: #48c5ce;
+    text-align: center;
+    padding: 10px;
+}
+.title1 {
+    font-size: 26px;
+    font-weight: 900;
+    /* color: white; */
+}
+
+
+.capa {
+    background-image: url(./images/CLO20_William_003-scaled.jpg);
+    overflow: hidden;
+    background-size: cover;
+    padding: 30px;
+}
+.cardForm {
+    max-width: 230px;
+    border: none;
+    background-color: #202121de;
+    padding: 20px;
+    float: right;
+
+    border-radius: 7px;
+}
+.cardForm:hover {
+    box-shadow: 0 0 10px #48c5cebd;
+}
+h2 {
+    font-size: 18px;
+}
+h2, p {
+    margin-bottom: 15px;
+    color: white;
+}
+.campo {
+    width: 100%;
+    box-sizing: border-box;
+    
+    border: none;
+    padding: 8px;
+    margin-bottom: 10px;
+
+    border-radius: 5px;
+}
+.botao {
+    background-color: #48c5ce;
+    color: white;
+    font-weight: 900;
+    /* box-shadow: 0 0 7px #4a4f505e; */
+    border: 2px solid #23b2bd;
+}
+.botao:hover {
+    border: 3px solid #237177;
+}
+.botao:active {
+    box-shadow: 0 0 15px #48c5ce;
+    color: #879697;
+}
+select {
+    /* deixar sem a seta */
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+
+    background-image: url(./images/arrow.jpg);
+    background-repeat: no-repeat;
+    /*                           X          Y     */
+    background-position: calc(100% - 5px) center;
+    background-size: 15px;
+}
+
+
+footer {
+    background-color: #202121;
+    padding: 40px;
+    text-align: center;
+}
+.perfil {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+
+    background-image: url(./images/CLO20_William_003-scaled.jpg);
+    background-size: 960px;
+    background-position: 28% 30%;
+    
+    border-radius: 20%;
+}
+.descricao {
+    display: inline-block;
+    max-width: 45%;
+    margin-left: 40px;
+    text-align: left;
+    color: white;
+}
+.descricao p {
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+.descricao h3 {
+    font-size: 24px;
+}
+
+@media screen and (max-width: 536px) {
+    .cardForm {
+        float: none;
+        margin: auto;
+    }
+    .perfil, .descricao {
+        display: block;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .descricao {
+        max-width: 100%;
+    }
+}
