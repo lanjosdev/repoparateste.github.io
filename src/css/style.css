@@ -57,7 +57,7 @@ main:after {
     transform: scale(1.2); /*aumentaa*/
 }
 .botoes-carrossel .botao.selecionado {
-    background-color: yellow;
+    background-color: #505a47;
 }
 
 /* ======================= Lateral Redes ======================= */
